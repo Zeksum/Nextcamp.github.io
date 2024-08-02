@@ -457,11 +457,13 @@ ul {
 }
 
 .main-menu-wrapper__logo {
-    position: relative;
+    /*position: relative;*/
     float: left;
-    padding-top: 32px;
-    padding-bottom: 31.5px;
-    margin-right: 150px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 100px;
+    /*width: 10px; !* 设置宽度 *!*/
+    /*height: 10px; !* 设置高度 *!*/
 }
 
 .main-menu-wrapper__main-menu {
