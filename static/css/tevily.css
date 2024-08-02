@@ -1501,10 +1501,10 @@ ul {
     z-index: 3;
 }
 
-.main-slider .swiper-slide-active .image-layer {
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
-}
+/*.main-slider .swiper-slide-active .image-layer {*/
+/*    -webkit-transform: scale(1.15);*/
+/*    transform: scale(1.15);*/
+/*}*/
 
 .main-slider .swiper-slide-active h2,
 .main-slider .swiper-slide-active p {
