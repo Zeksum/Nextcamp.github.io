@@ -2683,6 +2683,7 @@ ul {
     padding: 50px 50px 43px;
     text-align: center;
     border-radius: var(--thm-border-radius);
+    height: 550px;
 }
 
 .testimonail-one__content:before {
@@ -7632,4 +7633,20 @@ ul {
 .brand-three {
     border-bottom: 0;
     border-top: 1px solid #ebe6de;
+}
+
+/*滚动侧边*/
+.floating-text {
+    position: fixed; /* 固定在页面的一个位置 */
+    right: 10px; /* 距离右侧的距离 */
+    top: 75%; /* 初始距离顶部的距离 */
+    transform: translateY(-50%); /* 垂直居中 */
+    width: 80px; /* 宽度 */
+    padding: 10px;
+    background-color: rgb(245, 241, 241); /* 背景颜色 */
+    border: 1px solid #ddd; /* 边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    z-index: 1000; /* 设置较高的层叠顺序以确保内容显示在前 */
+    overflow-y: auto; /* 启用垂直滚动条 */
+    max-height: 300px; /* 最大高度，防止内容太多溢出 */
 }
