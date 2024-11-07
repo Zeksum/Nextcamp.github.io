@@ -7650,3 +7650,7 @@ ul {
     overflow-y: auto; /* 启用垂直滚动条 */
     max-height: 300px; /* 最大高度，防止内容太多溢出 */
 }
+
+.footer-widget__about-logo {
+
+}
