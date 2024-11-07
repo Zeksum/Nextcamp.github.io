@@ -45,85 +45,7 @@
     </div>
     <!-- /.preloader -->
     <div class="page-wrapper">
-        <header class="main-header clearfix">
-            <div class="main-header__top">
-                <div class="container">
-                    <div class="main-header__top-inner clearfix">
-                        <div class="main-header__top-left">
-                            <ul class="list-unstyled main-header__top-address">
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-phone-call"></span>
-                                    </div>
-                                    <div class="text">
-                                        <a href="tel:+86-187-8725-4626">+86 18787254626</a>
-                                        <a href="tel:+44-752-654-8977">+44 7526548977</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-at"></span>
-                                    </div>
-                                    <div class="text">
-                                        <a href="mailto:needhelp@company.com">na.wu@nextcampedu.com</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="main-header__top-right">
-<!--                            <div class="main-header__top-right-inner">-->
-<!--                                <div class="main-header__top-right-social">-->
-<!--                                    <a href="#"><i class="fab fa-facebook"></i></a>-->
-<!--                                    <a href="#"><i class="fab fa-twitter"></i></a>-->
-<!--                                    <a href="#"><i class="fab fa-instagram"></i></a>-->
-<!--                                    <a href="#"><i class="fab fa-dribbble"></i></a>-->
-<!--                                </div>-->
-                                <div class="main-header__top-right-btn-box">
-                                    <a href="#" class="thm-btn main-header__top-right-btn">联系我们</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <nav class="main-menu clearfix">
-                <div class="main-menu-wrapper clearfix">
-                    <div class="container clearfix">
-                        <div class="main-menu-wrapper-inner clearfix">
-                            <div class="main-menu-wrapper__left clearfix">
-                                <div class="main-menu-wrapper__logo">
-                                    <a href=""><img src="static/picture/nextcamp/logo1.jpg" height=100px alt=""></a>
-                                </div>
-                                <div class="main-menu-wrapper__main-menu">
-                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                                    <ul class="main-menu__list">
-                                        <li class="dropdown current">
-                                            <a href="index.html">首页</a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">研学项目</a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">AI助手(右下角)</a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">故事分享</a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">关于我们</a>
-                                        </li>
-                                        <li><a href="contact.html">联系我们</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-<!--                            <div class="main-menu-wrapper__right">-->
-<!--                                <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>-->
-<!--                                <a href="#" class="main-menu__user icon-avatar"></a>-->
-<!--                            </div>-->
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <div id="header"></div>
 
         <div class="floating-text">
             <strong>快使用研学ai小助手吧！</strong>
@@ -1101,6 +1023,16 @@
             componentProps: {
                 title: 'Coze',
             },
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("component/header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
         });
     </script>
 
