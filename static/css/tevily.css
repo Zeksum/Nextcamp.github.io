@@ -7558,6 +7558,7 @@ ul {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     line-height: 22px;
+    white-space: pre-line; /* This will allow line breaks */
 }
 
 .team-one__social {
@@ -7654,3 +7655,24 @@ ul {
 .footer-widget__about-logo {
 
 }
+
+.wechat-qrcodes {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px; /* Space between QR codes */
+    text-align: center;
+}
+
+.wechat-qrcode img {
+    width: 150px; /* Adjust as needed for your design */
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wechat-qrcode p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+

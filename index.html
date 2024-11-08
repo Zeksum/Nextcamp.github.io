@@ -47,7 +47,84 @@
     <div class="page-wrapper">
 
 <!--        头文件布置在此-->
-        <div id="header"></div>
+<!--        <div id="header"></div>-->
+        <header class="main-header clearfix">
+            <div class="main-header__top">
+                <div class="container">
+                    <div class="main-header__top-inner clearfix">
+                        <div class="main-header__top-left">
+                            <ul class="list-unstyled main-header__top-address">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-phone-call"></span>
+                                    </div>
+                                    <div class="text">
+                                        <a href="tel:+86-187-8725-4626">+86 18787254626</a>
+                                        <a href="tel:+44-752-654-8977">+44 7526548977</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-at"></span>
+                                    </div>
+                                    <div class="text">
+                                        <a href="mailto:info@nextcampedu.com">info@nextcampedu.com</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-header__top-right">
+                            <!--                            <div class="main-header__top-right-inner">-->
+                            <!--                                <div class="main-header__top-right-social">-->
+                            <!--                                    <a href="#"><i class="fab fa-facebook"></i></a>-->
+                            <!--                                    <a href="#"><i class="fab fa-twitter"></i></a>-->
+                            <!--                                    <a href="#"><i class="fab fa-instagram"></i></a>-->
+                            <!--                                    <a href="#"><i class="fab fa-dribbble"></i></a>-->
+                            <!--                                </div>-->
+                            <div class="main-header__top-right-btn-box">
+                                <a href="#" class="thm-btn main-header__top-right-btn">联系我们</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-menu clearfix">
+                <div class="main-menu-wrapper clearfix">
+                    <div class="container clearfix">
+                        <div class="main-menu-wrapper-inner clearfix">
+                            <div class="main-menu-wrapper__left clearfix">
+                                <div class="main-menu-wrapper__logo">
+                                    <a href=""><img src="static/picture/nextcamp/logo1.jpg" height=100px alt=""></a>
+                                </div>
+                                <div class="main-menu-wrapper__main-menu">
+                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                    <ul class="main-menu__list">
+                                        <li class="dropdown current">
+                                            <a href="index.html">首页</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="tours.html">研学项目</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#">故事分享</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="about.html">关于我们</a>
+                                        </li>
+                                        <li><a href="contact.html">联系我们</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-menu-wrapper__right">
+                                <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
+                                <a href="#" class="main-menu__user icon-avatar"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
 
         <div class="floating-text">
             <strong>快使用研学ai小助手吧！</strong>
@@ -97,12 +174,12 @@
                         <div></div>
                         <div class="container">
                             <div class="swiper-slide-inner">
-                                <div class="row">
+<!--                                <div class="row">-->
 <!--                                    <div class="col-xl-12">-->
-<!--                                        <h2> 名校 & 背景</h2>-->
+<!--                                        <h2> 名校体验 & 背景提升</h2>-->
 <!--                                        <p>共享全球优质教育资源</p>-->
 <!--                                    </div>-->
-                                </div>
+<!--                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -116,42 +193,42 @@
         </section>
 
         <!--Tour Search Start-->
-        <section class="tour-search">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="tour-search-box">
-                            <form class="tour-search-one" action="tour-sidebar.html">
-                                <div class="tour-search-one__inner">
-                                    <div class="tour-search-one__inputs">
+<!--        <section class="tour-search">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-xl-12">-->
+<!--                        <div class="tour-search-box">-->
+<!--                            <form class="tour-search-one" action="tour-sidebar.html">-->
+<!--                                <div class="tour-search-one__inner">-->
+<!--                                    <div class="tour-search-one__inputs">-->
+<!--&lt;!&ndash;                                        <div class="tour-search-one__input-box">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <label for="place">Where to</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <input type="text" placeholder="Enter keywords" name="place" id="place">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
 <!--                                        <div class="tour-search-one__input-box">-->
-<!--                                            <label for="place">Where to</label>-->
-<!--                                            <input type="text" placeholder="Enter keywords" name="place" id="place">-->
+<!--                                            <label>时间</label>-->
+<!--                                            <input type="text" placeholder="八月" name="when" id="datepicker">-->
 <!--                                        </div>-->
-                                        <div class="tour-search-one__input-box">
-                                            <label>时间</label>
-                                            <input type="text" placeholder="八月" name="when" id="datepicker">
-                                        </div>
-                                        <div class="tour-search-one__input-box tour-search-one__input-box-last">
-                                            <label for="type">搜索国家</label>
-                                            <select class="selectpicker" id="type">
-                                                <option value="Adventure">英国</option>
-                                                <option value="Wildlife">新加坡</option>
-                                                <option value="Sightseeing">马来西亚</option>
-                                                <option value="Sightseeing">泰国</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="tour-search-one__btn-wrap">
-                                        <button type="submit" class="thm-btn tour-search-one__btn">搜索</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!--                                        <div class="tour-search-one__input-box tour-search-one__input-box-last">-->
+<!--                                            <label for="type">搜索国家</label>-->
+<!--                                            <select class="selectpicker" id="type">-->
+<!--                                                <option value="Adventure">英国</option>-->
+<!--                                                <option value="Wildlife">新加坡</option>-->
+<!--                                                <option value="Sightseeing">马来西亚</option>-->
+<!--                                                <option value="Sightseeing">泰国</option>-->
+<!--                                            </select>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="tour-search-one__btn-wrap">-->
+<!--                                        <button type="submit" class="thm-btn tour-search-one__btn">搜索</button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
         <!--Tour Search End-->
 
     <!--Three Icon Box Start-->
@@ -630,56 +707,6 @@
         </section>
         <!--Testimonial One End-->
 
-<!--        &lt;!&ndash;Gallery One Start&ndash;&gt;-->
-<!--        <section class="gallery-one">-->
-<!--            <div class="gallery-one-bg" style="background-image: url(static/image/gallery-map.png)"></div>-->
-<!--            <div class="gallery-one__container-box clearfix">-->
-<!--                <ul class="list-unstyled gallery-one__content clearfix">-->
-<!--                    <li class="wow fadeInUp" data-wow-delay="100ms">-->
-<!--                        <div class="gallery-one__img-box">-->
-<!--                            <img src="static/picture/gallery-one-img-1.jpg" alt="">-->
-<!--                            <div class="gallery-one__iocn">-->
-<!--                                <a class="img-popup" href="static/picture/gallery-one-img-1.jpg"><i class="fab fa-instagram"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                    <li class="wow fadeInUp" data-wow-delay="200ms">-->
-<!--                        <div class="gallery-one__img-box">-->
-<!--                            <img src="static/picture/gallery-one-img-2.jpg" alt="">-->
-<!--                            <div class="gallery-one__iocn">-->
-<!--                                <a class="img-popup" href="static/picture/gallery-one-img-2.jpg"><i class="fab fa-instagram"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                    <li class="wow fadeInUp" data-wow-delay="300ms">-->
-<!--                        <div class="gallery-one__img-box">-->
-<!--                            <img src="static/picture/gallery-one-img-3.jpg" alt="">-->
-<!--                            <div class="gallery-one__iocn">-->
-<!--                                <a class="img-popup" href="static/picture/gallery-one-img-3.jpg"><i class="fab fa-instagram"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                    <li class="wow fadeInUp" data-wow-delay="400ms">-->
-<!--                        <div class="gallery-one__img-box">-->
-<!--                            <img src="static/picture/gallery-one-img-4.jpg" alt="">-->
-<!--                            <div class="gallery-one__iocn">-->
-<!--                                <a class="img-popup" href="static/picture/gallery-one-img-4.jpg"><i class="fab fa-instagram"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                    <li class="wow fadeInUp" data-wow-delay="500ms">-->
-<!--                        <div class="gallery-one__img-box">-->
-<!--                            <img src="static/picture/gallery-one-img-5.jpg" alt="">-->
-<!--                            <div class="gallery-one__iocn">-->
-<!--                                <a class="img-popup" href="static/picture/gallery-one-img-5.jpg"><i class="fab fa-instagram"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </section>-->
-<!--        &lt;!&ndash;Gallery Oned End&ndash;&gt;-->
-
     <!--About One Start-->
     <section class="about-one">
         <div class="about-one-shape-1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
@@ -705,7 +732,7 @@
                                 </div>
                             </div>
                             <div class="about-one__discount">
-                                <h2>低于市面价格40%</h2>
+                                <h2>低于市面价格20%</h2>
                                 <h3>无中介，无加价</h3>
                             </div>
                         </div>
@@ -717,7 +744,7 @@
                             <span class="section-title__tagline">高性价比 高含金量</span>
                             <h2 class="section-title__title">明日学旅 • Next Camp</h2>
                         </div>
-                        <p class="about-one__right-text">NextCamp（“明日学旅”）是一个在线信息平台，专为希望参与国际研学的学生和家长提供信息分享和预定服务，致力于用科技推动全球教育资源共享。作为国际研学领域的创新者，NextCamp在全球范围严格筛选优质研学项目，通过去第三方中介，直接连接项目主办方和用户，提供“高品质，价更优”的国际研学选择。公司总部位于英国伦敦，并在中国苏州设有核心运营中心，以链接全球优质教育资源，服务广大中国学子。</p>
+                        <p class="about-one__right-text">NextCamp（“明日学旅”）是一个在线信息平台，专为希望参与国际研学的学生和家长提供信息分享和预定服务，致力于用科技推动全球教育资源共享。作为国际研学领域的创新者，NextCamp在全球范围严格筛选优质研学项目，通过去第三方中介，直接连接项目主办方和用户，提供“高品质，价更优”的国际研学选择。公司总部位于英国伦敦，并在中国南京设有核心运营中心，在苏州有教培合作伙伴，以链接全球优质教育资源，服务广大中国学子。</p>
                         <ul class="list-unstyled about-one__points">
                             <li>
                                 <div class="icon">
@@ -823,7 +850,6 @@
 
     </div><!-- /.page-wrapper -->
 
-
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
         <!-- /.mobile-nav__overlay -->
@@ -831,7 +857,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="" aria-label="logo image"><img src="static/picture/nextcamp/logo-w.png" width="155" alt=""></a>
+                <a href="" aria-label="logo image"><img src="static/picture/nextcamp/logo1.jpg" width="155" alt=""></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
@@ -863,25 +889,35 @@
     </div>
     <!-- /.mobile-nav__wrapper -->
 
-<!--    <div class="search-popup">-->
-<!--        <div class="search-popup__overlay search-toggler"></div>-->
-<!--        &lt;!&ndash; /.search-popup__overlay &ndash;&gt;-->
-<!--        <div class="search-popup__content">-->
-<!--            <form action="#">-->
-<!--                <label for="search" class="sr-only">搜索</label>&lt;!&ndash; /.sr-only &ndash;&gt;-->
-<!--                <input type="text" id="search" placeholder="Search Here...">-->
-<!--                <button type="submit" aria-label="search submit" class="thm-btn">-->
-<!--                    <i class="icon-magnifying-glass"></i>-->
-<!--                </button>-->
-<!--            </form>-->
-<!--        </div>-->
-<!--        &lt;!&ndash; /.search-popup__content &ndash;&gt;-->
-<!--    </div>-->
-<!--    &lt;!&ndash; /.search-popup &ndash;&gt;-->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">搜索</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here...">
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
 
 
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("component/footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>
     <script src="static/js/jquery-3.6.0.min.js"></script>
     <script src="static/js/bootstrap.bundle.min.js"></script>
     <script src="static/js/jarallax.min.js"></script>
@@ -907,36 +943,6 @@
     <script src="static/js/jquery-ui.js"></script>
     <script src="static/js/timePicker.js"></script>
     <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/cn/index.js"></script>
-    <script>
-        new CozeWebSDK.WebChatClient({
-            config: {
-                bot_id: '7397366085600755751',
-            },
-            componentProps: {
-                title: 'Coze',
-            },
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch("component/header.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("header").innerHTML = data;
-                })
-                .catch(error => console.error('Error loading header:', error));
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch("component/footer.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("footer").innerHTML = data;
-                })
-                .catch(error => console.error('Error loading footer:', error));
-        });
-    </script>
 
     <!-- template js -->
     <script src="static/js/tevily.js"></script>
