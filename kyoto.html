@@ -299,6 +299,57 @@
     </div>
   </div>
 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("component/footer.html")
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("footer").innerHTML = data;
+              })
+              .catch(error => console.error('Error loading footer:', error));
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("component/tourstuijian.html")
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("tourstuijian").innerHTML = data;
+              })
+              .catch(error => console.error('Error loading tuijian:', error));
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("component/yuding.html")
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("yuding").innerHTML = data;
+              })
+              .catch(error => console.error('Error loading yuding:', error));
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("component/yuding.html")
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("yuding").innerHTML = data;
+              })
+              .catch(error => console.error('Error loading yuding:', error));
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("component/rating.html")
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("rating").innerHTML = data;
+              })
+              .catch(error => console.error('Error loading yuding:', error));
+    });
+  </script>
   <script src="static/js/jquery-3.6.0.min.js"></script>
   <script src="static/js/bootstrap.bundle.min.js"></script>
   <script src="static/js/jarallax.min.js"></script>
