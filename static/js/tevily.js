@@ -13,13 +13,13 @@
     var priceRange = document.getElementById('range-slider-price');
 
     noUiSlider.create(priceRange, {
-      start: [76, 150],
-      limit: 200,
+      start: [10000, 50000],
+      limit: 100000,
       behaviour: 'drag',
       connect: true,
       range: {
-        'min': 10,
-        'max': 200
+        'min': 3000,
+        'max': 100000
       }
     });
 
